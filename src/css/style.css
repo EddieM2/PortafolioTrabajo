@@ -1,6 +1,26 @@
+/* CSS HEX */
+/* --eastern-blue: #1e81b0;
+--green-white: #eeeee4;
+--burnt-sienna: #e28743;
+--tacao: #eab676;
+--glacier: #76b5c5;
+--eternity: #21130d;
+--burnt-umber: #873e23;
+--powder-blue: #abdbe3;
+--catalina-blue: #063970;
+--chathams-blue: #154c79; */
+/* Colores cálidos */
+:root {
+    --color-fondo: #F5E6CA; /* Beige claro */
+    --color-texto: #5D5348; /* Marrón oscuro */
+    --color-destacado: #C96E44; /* Naranja oscuro */
+  }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
 }
 
 *,
@@ -12,12 +32,18 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 p {
     font-size: 2rem;
     color: black;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 .contenedor {
@@ -57,4 +83,146 @@ img {
 
 .header-content {
     position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 13%;
+    height: 100%;
+    background-color: #D4AF37;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.header-content_img {
+    padding-bottom: 2rem;
+}
+
+.main {
+    padding-left: 15%;
+    background-color: var(--color-fondo);
+}
+
+/* 9cd2d3 */
+.main-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Diseño portada */
+
+/* Titulos */
+
+.main-content_name {
+    color: var(--color-texto);
+}
+
+.titulos {
+    color: var(--color-destacado);
+}
+
+.subtitulos {
+
+}
+
+.span-destacado {
+    color: var(--color-destacado);
+}
+
+.main-content_subtitle{
+    color: var(--color-texto);
+}
+
+.main-content_contacto {
+    color: var(--color-texto);
+}
+
+/* Boton */
+
+.main-content_cv{
+    padding-top: 5rem;
+}
+
+.main-content_burbujascontacto {
+    padding-top: 7rem;
+}
+
+.main-content_botton-cv {
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .main-content_botton-cv:hover {
+    background-color: #45a049;
+  }
+  .main-content_botton-cv:active {
+    background-color: #3e8e41;
+  }
+
+  .burbujascontacto {
+    padding: 15px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .burbujascontacto:not(:first-child) {
+    margin-left: 2.5rem;
+  }
+
+  .burbujascontacto:hover {
+    background-color: #45a049;
+  }
+  .burbujascontacto:active {
+    background-color: #3e8e41;
+  }
+
+  /* Portafolio */
+  /* Cards */
+
+  .card-container {
+    display: flex;
+    padding: 0px 50px 10px 0px;
+  }
+
+  .card {
+    padding: 5px 30px;
+  }
+
+  .img-card img{
+    max-width: 100%;
+    height: 300px;
+    display: block;
+  }
+
+
+  /* Educacion */
+
+  .educacion-certificado h1, h2, h3{
+    padding: 0;
+    margin: 0;
+  }
+
+  .educacion-certificado h2{
+    color: var(--color-destacado);
+  }
+
+  .educacion-certificado h3, p {
+    color: var(--color-texto);
+  }
+
+
+  /* Skills */
+
+  .skills-container h3{
+    color: var(--color-destacado);
+  }

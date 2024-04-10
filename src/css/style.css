@@ -226,3 +226,13 @@ img {
   .skills-container h3{
     color: var(--color-destacado);
   }
+
+  /* Badges */
+
+  .badge {
+    background-color: orange;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }

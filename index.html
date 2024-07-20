@@ -4,221 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Mulish&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a7421d5fc7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Portafolio</title>
 </head>
 <body>
-    
-    <header>
-        <div class="header-content">
-            <div class="header-content_img">
-                <img class="img-foto" src="src/img/fotomia.jpeg" alt="">
-            </div>
-            <div class="header-content_title">
-                <div>
-                    <h4><a href="#edgard">Edgard</a></h4>
+
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>Portafolio <span class="verde">Ed</span><span>ga</span><span class="rojo">rd</span></h2>
+                    </a>
                 </div>
-                <div>
-                    <h4><a href="#sobremi">Sobre mi</a></h4>
-                </div>
-                <div>
-                    <h4><a href="#portafolio">Portafolio</a></h4>
-                </div>
-                <div>
-                    <h4><a href="#educacion">Educación</a></h4>
-                </div>
-                <div>
-                    <h4><a href="#skills">Skills</a></h4>
-                </div>
-                <div>
-                    <h4><a href="#contacto">Contacto</a></h4>
+                <nav class="navegacion ocultar">
+                    <a href="#programador">Sobre mi</a>
+                    <a href="#lenguajes">Lenguajes</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="proyectos.html">Proyectos</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-            
         </div>
+
     </header>
 
-    <main id="edgard" class="main">
-        <section class="main-content main-content_edgard">
-            <div class="main-content_name">
-                <h1>Edgard <span class="span-destacado">Chamal</span></h1>
+    <section id="programador" class="programador contenedor">
+        <h2>Edgard Chamal</h2>
+        <div class="contenido-programador">
+            <div class="texto-programador">
+                <h3>La excelencia está en la diversidad y el modo de progresar es conocer y comprar las diversidades de productos, culturas y técnicas.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cumque quis sint magni officia at enim cupiditate alias culpa quod sed voluptates omnis consectetur natus? Non debitis itaque corrupti saepe!</p>
+                <a href="#" class="btn btn-verde">Leer Biografía</a>
             </div>
-            <div class="main-content_subtitle">
-                <h3>Bienvenido a mi protafolio como desarrollador</h3>
+            <div class="imagen-programador">
+                <img data-src="src/img/fotomia.webp" alt="Imagen programador">
             </div>
-            <div class="main-content_contacto">
-                <p>Si quieres ponerte en contacto conmigo, escribeme aquí <span class="span-destacado">ed.chamalmillares@gmail.com</span></p>
+        </div>
+    </section>
+
+    <section id="lenguajes" class="lenguajes contenedor">
+        <h1>Lenguajes de programación</h1>
+        <div class="lenguajes-contenido contenedor">
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/html-5.png" alt="">
+                <button class="btn btn-lenguaje">Html</button>
             </div>
-            <div class="main-content_cv">
-                <button class="main-content_botton-cv">boton de curriculum</button>
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/css-3.png" alt="">
+                <button class="btn btn-lenguaje">Css</button>
             </div>
-            <div class="main-content_burbujascontacto">
-                <button class="burbujascontacto"><i class="fa-brands fa-linkedin-in"></i></button>
-                <button class="burbujascontacto"><i class="fa-brands fa-github"></i></button>
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/js.png" alt="">
+                <button class="btn btn-lenguaje">JavaScript</button>
             </div>
-        </section>
-    
-    
-        <section id="sobremi" class="main-content main-content_sobremi">
-            <div>
-                <h1 class="titulos">Sobre mi</h1>
+        </div>
+        <div class="lenguajes-contenido contenedor">
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/servidor-sql.png" alt="">
+                <button class="btn btn-lenguaje">Sql / PlSql</button>
             </div>
-            <div>
-                <p>Soy un egresado de ingeniería en informática, comence mi educación el año 2020 y finalizado el año 2024, realice mi práctica profesional en el Club deportivo de la universidad Católica, donde se realizo un proyecto completo, desde la toma de requerimientos, construcción de base de datos, limpieza y preparación de datos hasta la migración de estos.</p>
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/piton.png" alt="">
+                <button class="btn btn-lenguaje">Python</button>
             </div>
-            <div>
-                <h3 class="subtitulos">Actualmente me encuentro desarrollando páginas web y realizando análisis de datos de manera autodidacta para desempeñarme en estas áreas.</h3>
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/java.png" alt="">
+                <button class="btn btn-lenguaje">Java</button>
             </div>
-            <div>
-                <p>Si quieres ponerte en contacto conmigo, escribeme a ed.chamalmillares@gmail.com</p>
+        </div>
+        <div class="lenguajes-contenido contenedor">
+            <div class="lenguajes-tarjeta">
+                <img data-src="src/img/php.png" alt="">
+                <button class="btn btn-lenguaje">Php</button>
             </div>
-            <div>
-                <p>Mira los proyectos que he desarrollado en <a target="_blank" href="https://github.com/EddieM2">Github!</a></p>
+        </div>
+    </section>
+
+    <section id="experiencia" class="experiencia contenedor">
+        <h1>Experiencia laboral</h1>
+        <div class="contenido-experiencia">
+            <div class="experiencia-trabajo">
+                <h2>Digitalización de la información</h2>
+                <h3>Club deportivo universidad Católica</h3>
+                <h4>Noviembre 02/2023 - Enero 31/2024</h4>
+                <p>Levantamiento de requerimientos, Diseño y creación de base de datos relacional, proceso ETL, integración de sistemas, migración de datos entre sistemas, desarrollo de BackEnd y FrontEnd</p>
             </div>
-        </section>
-    
-    
-        <section id="portafolio" class="main-content main-content_portafolio">
-            <h1 class="titulos">Portafolio</h1>
-            
-            <div class="card-container">
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/blogdeCafe.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/festivalMusical.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/Blackjack.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
+        </div>
+        <div class="contenido-experiencia">
+            <div class="experiencia-trabajo">
+                <h2>Digitalización de la información</h2>
+                <h3>Club deportivo universidad Católica</h3>
+                <h4>Noviembre 02/2023 - Enero 31/2024</h4>
+                <p>Levantamiento de requerimientos, Diseño y creación de base de datos relacional, proceso ETL, integración de sistemas, migración de datos entre sistemas, desarrollo de BackEnd y FrontEnd</p>
             </div>
+        </div>
+    </section>
 
-            <div class="card-container">
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/FrontEndStore.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/blogdeCafe.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-card">
-                        <img src="src/img/blogdeCafe.png" alt="">
-                    </div>
-                    <div class="text-card">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde voluptatum commodi doloremque alias eos voluptas est minus ea minima nemo veniam laborum maiores facere aut, saepe dolores eum omnis?</p>
-                    </div>
-                </div>
-            </div>
 
-        </section>
-    
-    
-        <section id="educacion" class="main-content main-content_educacion">
-            <h1 class="titulos">Educacion</h1>
+    <section id="contacto" class="contacto contenedor">
+        <h1>Contacto</h1>
+        <div class="contacto-contenido">
+            <p><span><i class="fa-regular fa-envelope"></i></span> Gmail Ed.chamalmillares@gmail.com</p>
+            <br>
+            <p><span><i class="fa-brands fa-whatsapp"></i></span> Whatsapp +569 40636706</p>
+            <br>
+            <p><span><i class="fa-brands fa-linkedin"></i></span> LinkedIn </p>
+            <br>
+            <p><span><i class="fa-brands fa-github"></i></span> GitHub </p>
+        </div>
+    </section>
 
-            <div class="educacion-certificado">
-                <h2>Titulo educacion</h2>
-                <h3>Subtitulo educacion</h3>
-                <p>texto</p>
-                <button>certificado</button>
-            </div>
-            
 
-            <div class="educacion-certificado">
-                <h2>Titulo educacion</h2>
-                <h3>Subtitulo educacion</h3>
-                <p>texto</p>
-                <button>certificado</button>
-            </div>
+    <footer class="footer">
+        <p>Portafolio web desarrollado por &copy; Edgard Chamal</p>
 
-            <div class="educacion-certificado">
-                <h2>Titulo educacion</h2>
-                <h3>Subtitulo educacion</h3>
-                <p>texto</p>
-                <button>certificado</button>
-            </div>
+    </footer>
 
-        </section>
-    
-    
-        <section id="skills" class="main-content">
-           <h1 class="titulos">Skills</h1>
-
-           <div class="skills-container">
-            <h3>Lenguajes de programación</h3>
-
-            <span class="badge"><i class="fa-brands fa-html5"> Html</i></span>
-            <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS</i></span>
-            <span class="badge"><i class="fa-brands fa-python"></i> Python</i></span>
-            <span class="badge"><i class="fa-brands fa-php"></i> PHP</i></span>
-            <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</i></span>
-            <span class="badge"><i class="fa-solid fa-database"></i> SQL / PLSQL</i></span>
-            <span class="badge"><i class="fa-brands fa-java"></i> Java</i></span>
-
-            <h3>Frameworks y librerías</h3>
-
-            <span class="badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap</i></span>
-            <span class="badge"><i class="fa-brands fa-python"></i> Django</i></span>
-            <span class="badge"><i class="fa-brands fa-node"></i> NodeJS</i></span>
- 
-            <h3>Software y herramientas</h3>
-
-            <span class="badge"><i class=""></i> Visual Estudio Code</i></span>
-            <span class="badge"><i class=""></i> Power BI</i></span>
-            <span class="badge"><i class=""></i> Microsoft Excel</i></span>
-            <span class="badge"><i class=""></i> Tableau</i></span>
-           </div>
-           
-        </section>
-    
-    
-        <section id="contacto" class="main-content">
-            
-            <h1 class="titulos">Contáctame</h1>
-
-            <p>Email</p>
-
-            <p>Whatsapp</p>
-
-            <p>Linkedin</p>
-
-        </section>
-    </main>
-    
-
-    <script src="https://kit.fontawesome.com/a7421d5fc7.js" crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
 
 </body>
 </html>

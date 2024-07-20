@@ -44,6 +44,8 @@ const botonCerrar = () => {
 }
 
 const cerrarMenu = (boton,overlay) => {
+    const enlaces = navegacion.querySelectorAll('a');
+
     boton.addEventListener('click', () => {
         navegacion.classList.add('ocultar');
         overlay.remove();
@@ -52,8 +54,14 @@ const cerrarMenu = (boton,overlay) => {
     overlay.onclick = function() {
         overlay.remove();
         navegacion.classList.add('ocultar')
-
     }
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            navegacion.classList.add('ocultar');
+            overlay.remove();
+        });
+    });
 }
 
 const observer = new IntersectionObserver((entries, observer) =>{

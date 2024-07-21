@@ -64,13 +64,31 @@ img {
 }
 
 .btn {
-  text-decoration: none;
-  color: var(--blanco);
-  font-size: 2rem;
-  text-transform: capitalize;
-  padding: 1rem 5rem;
-  transition: all .3s ease-in-out;
+  display: inline-block;
+  padding: 10px 20px 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botones-lenguajes {
+  background-color: var(--verde);
+  border: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: var(--parrafos);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-proyectos {
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-lenguaje {
@@ -264,6 +282,14 @@ img {
 
 /* Lenguajes */
 
+.lenguajes h1 {
+  background-color: var(--rojo);
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: var(--blanco);
+  font-size: 4rem;
+}
+
 .lenguajes-contenido {
   width: 70%;
   padding: 1rem;
@@ -296,14 +322,40 @@ img {
 
 /* Experiencia */
 
+.experiencia h1 {
+  background-color: var(--rojo);
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: var(--blanco);
+  font-size: 4rem;
+}
+
 .contenido-experiencia {
   border: 1px solid #e1e1e1;
   padding: 2rem;
   margin-bottom: 1rem;
+  color: var(--blanco);
+  background-color: var(--oscuro);
+}
+
+.experiencia-trabajo h2 {
+  background-color: var(--verde);
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: var(--blanco);
+  font-size: 2.5rem;
 }
 
 
 /* Contacto */
+
+.contacto h1 {
+  background-color: var(--rojo);
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: var(--blanco);
+  font-size: 4rem;
+}
 
 .contacto-contenido {
   border: 1px solid #e1e1e1;
@@ -352,6 +404,10 @@ img {
 
   .botones-lenguajes button {
       flex: unset;
+      width: 100%;
+        box-sizing: border-box; /* Para incluir el padding y el borde en el tamaño total del botón */
+        padding: 12px 20px;
+        font-size: 14px;
   }
 }
 
